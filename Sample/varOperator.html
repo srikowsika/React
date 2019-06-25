@@ -1,0 +1,37 @@
+<html>
+<head>
+<h2>Variables and Operators - JavaScript</h2> 
+<body>
+<p>two varaibles are declared and operators are used</p>
+<p id="concat"></p>
+<p id="sum"></p>
+<p id="ES6 expo operator"></p>
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+<p id="array"></p>
+<p id="typeof"></p>
+<script>
+var x='apple';
+var y=5;
+var z=4;
+var z; // re-declare of variable will not lose it's values
+var product = ["Mobile",,"Headphone","Computers"];
+var employee = {
+  firstName : "Krish",
+  lastName  : "Shiva",
+  designation  : "Developer"
+};
+employee = null;
+
+document.getElementById("concat").innerHTML="The result is:" + x+y;
+document.getElementById("sum").innerHTML=z+y;
+document.getElementById("ES6 expo operator").innerHTML=z ** 5 + " expo operator ";
+document.getElementById("array").innerHTML=car[1];
+document.getElementById("object").innerHTML =
+employee.firstName + " is working as a " + employee.designation;
+
+document.getElementById("typeof").innerHTML = typeof person;
+</script>
+</body>
+
+
+</html>
