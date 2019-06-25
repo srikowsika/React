@@ -1,0 +1,27 @@
+
+
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+<p>Accessing a function without () will return the function definition instead of the function result:</p>
+<p id="demo"></p>
+<p id="()operator"></p>
+
+<script>
+function toMultiply(p1, p2) {
+  return p1 * p2;
+}
+function toAdd() {
+  return 5+8;
+}
+document.getElementById("demo").innerHTML = toMultiply(4, 3);
+document.getElementById("()operator").innerHTML = toAdd;
+document.getElementById("()operator").innerHTML = toAdd();
+</script>
+
+
+
+

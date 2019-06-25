@@ -1,0 +1,79 @@
+Rest Parameter://ES6
+
+function fun(…input){
+let sum = 0;
+for(let i of input){
+sum+=i;
+}
+return sum;
+}
+</script>
+</head>
+<body>
+console.log(fun(1,2)); //3
+console.log(fun(1,2,3)); //6
+console.log(fun(1,2,3,4,5)); //15
+
+------------------------------------------------------------------------------------------------------------
+
+function fun(a,b,…c){
+console.log(`${a} ${b}`); //Pen Pencil
+console.log(c); //[ ‘Book’, ‘Notebook’, ‘Bag’ ]
+console.log(c[0]); //Book
+console.log(c.length); //3
+console.log(c.indexOf(‘Bag’)); //2
+}
+fun(‘Pen’,’Pencil’,’Book’,’Notebook’,’Bag’); 
+
+-------------------------------------------------------------------------------------------------------------
+
+Spread Parameter
+
+1) Normal concat function without spread:
+ 
+let arr = [1,2,3]; 
+let arr2 = [4,5]; 
+  
+arr = arr.concat(arr2); 
+  
+console.log(arr); // [ 1, 2, 3, 4, 5 ] 
+
+using spread://not recommended for larger data arrays, because it is slow compared to concat()
+
+let arr = [1,2,3]; 
+let arr2 = [4,5]; 
+  
+arr = [...arr,...arr2]; 
+console.log(arr); // [ 1, 2, 3, 4, 5 ] 
+
+-------------------------------------------------------------------------------------------------------------
+
+Promise
+
+var promise = new Promise(function(resolve, reject) { 
+const x = "Apple"; 
+const y = "Orange"
+if(x == y) { 
+	resolve(); 
+} else { 
+	reject(); 
+} 
+}); 
+
+promise. 
+	then(function () { 
+		console.log('Success, You are a GEEK'); 
+	}). 
+	catch(function () { 
+		console.log('Some error has occured'); 
+	}); 
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
